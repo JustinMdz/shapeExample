@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 #include "RegularPolygon.h"
-#include "Shape.h"
+#include "Rectangle.h"
 
 int main() {
+
+	
 
 	return 0;
 }
