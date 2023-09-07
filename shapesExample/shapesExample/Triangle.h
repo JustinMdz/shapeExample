@@ -1,5 +1,10 @@
 #pragma once
-class Triangle
+#include "Shape.h"
+class Triangle : public  Shape
 {
+private:
+
+public:
+
 };
 

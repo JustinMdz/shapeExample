@@ -1,5 +1,8 @@
 #pragma once
-class RegularPolygon
+#include "Shape.h"
+class RegularPolygon : public  Shape
 {
-};
+private:
 
+public:
+};

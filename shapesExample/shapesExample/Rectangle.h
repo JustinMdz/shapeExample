@@ -1,5 +1,9 @@
 #pragma once
-class Rectangle
+#include "Square.h"
+class Rectangle : public Square
 {
+private:
+
+public:
 };
 

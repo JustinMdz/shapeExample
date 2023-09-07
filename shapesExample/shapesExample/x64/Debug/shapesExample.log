@@ -1,2 +1,10 @@
-﻿  main.cpp
+﻿  Circle.cpp
+  Ellipse.cpp
+  List.cpp
+  Rectangle.cpp
+  RegularPolygon.cpp
+  Shape.cpp
+  Square.cpp
+  Triangle.cpp
+  Generando código...
   shapesExample.vcxproj -> C:\Users\justi\OneDrive\Desktop\shapesExample\Ejercicio shapesExample\shapesExample\x64\Debug\shapesExample.exe
