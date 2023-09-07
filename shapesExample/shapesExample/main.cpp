@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-#include "Triangle.h"
+#include "Square.h"
+#include "Shape.h"
 int main() {
 
 
