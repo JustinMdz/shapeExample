@@ -6,5 +6,6 @@
   Shape.cpp
   Square.cpp
   Triangle.cpp
+  main.cpp
   Generando código...
   shapesExample.vcxproj -> C:\Users\justi\OneDrive\Desktop\shapesExample\Ejercicio shapesExample\shapesExample\x64\Debug\shapesExample.exe

@@ -7,6 +7,7 @@ class Shape
 {
 private:
 	string name;
+
 public:
 	virtual double calculatePerimeter()const = 0;
 	virtual double calculateArea()const = 0;

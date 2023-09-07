@@ -4,7 +4,17 @@ class Triangle : public  Shape
 {
 private:
 
-public:
+	double base;
+	double high;
+	double secondSide;
+	double thirdSide;
 
+
+public:
+	Triangle(double,double,double,double);
+
+	double calculatePerimeter() const override;
+	double calculateArea()const override;
+	void printDetails();
 };
 
