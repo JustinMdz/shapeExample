@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
-#include "Circle.h"
+#include "RegularPolygon.h"
 #include "Shape.h"
 
 int main() {
-
-	
 
 	return 0;
 }
