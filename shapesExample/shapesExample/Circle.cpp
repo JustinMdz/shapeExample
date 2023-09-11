@@ -18,6 +18,6 @@ double Circle::calculateArea() const
 void Circle::printDetails()
 {
 	cout << "I'm a Circle" << endl
-		<< "my perimiter is : " << calculatePerimeter() << endl
+		<< "my perimeter is : " << calculatePerimeter() << endl
 		<< "and my area is: " << calculateArea();
 }
