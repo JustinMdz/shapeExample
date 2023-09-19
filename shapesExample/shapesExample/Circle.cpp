@@ -1,23 +1,26 @@
 #include "Circle.h"
 
-Circle::Circle(double circleRadio)
+
+Circle::Circle(string shapeName, double circleRadio, double numberPI) : Shape(shapeName)
 {
-	radio = circleRadio;
+	this->name = shapeName;
+	this->radio = circleRadio;
+	this->piNumber = numberPI;
 }
 
 double Circle::calculatePerimeter() const
 {
-    return (2 * PI_NUMBER * radio);
+	return 2 * piNumber * radio;
 }
 
 double Circle::calculateArea() const
 {
-    return (PI_NUMBER*(radio * radio));
+	return piNumber * radio * radio;
 }
 
 void Circle::printDetails()
 {
-	cout << "I'm a Circle" << endl
-		<< "my perimiter is : " << calculatePerimeter() << endl
-		<< "and my area is: " << calculateArea();
+	cout << "My info as a " << name << ", are: \n";
+	cout << "Perimeter: " << calculatePerimeter();
+	cout << "\nArea: " << calculateArea() << endl << endl;
 }

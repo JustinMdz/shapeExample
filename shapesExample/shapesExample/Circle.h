@@ -1,14 +1,15 @@
 #pragma once
 #include "Shape.h"
-const double static PI_NUMBER = 3.14159265358979323846;
-class Circle : public  Shape
+
+class Circle : public Shape
 {
 private:
-	double radio;
+	string name;
+	double radio = 0.0;
+	double piNumber = 0.0;
 public:
-	Circle(double);
+	Circle(string, double, double);
 	double calculatePerimeter() const override;
 	double calculateArea()const override;
 	void printDetails();
 };
-

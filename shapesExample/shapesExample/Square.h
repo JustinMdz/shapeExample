@@ -1,15 +1,16 @@
 #pragma once
 #include "Shape.h"
+
 class Square : public  Shape
 {
-	static const int SIDES_OF_SQUARE = 4;
+
 private:
+	string name;
+	int squareSides = 4;
 	double base;
 public:
-	Square(double);
+	Square(string, double);
 	double calculatePerimeter() const override;
 	double calculateArea()const override;
 	void printDetails();
 };
-
-

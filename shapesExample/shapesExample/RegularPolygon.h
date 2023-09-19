@@ -1,16 +1,17 @@
 #pragma once
 #include "Shape.h"
-class RegularPolygon : public  Shape
+class RegularPolygon : public Shape
 {
+
 private:
+	string name;
 	double side;
 	double apotem;
-	int numberOfSides;
-
+	int numberOfSide;
+	
 public:
-	RegularPolygon(int, double, double);
+	RegularPolygon(string, double,double,int);
 	double calculatePerimeter() const override;
 	double calculateArea()const override;
 	void printDetails();
-
 };

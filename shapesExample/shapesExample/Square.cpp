@@ -1,13 +1,13 @@
 #include "Square.h"
 
-Square::Square(double squareSide)
-{
-	base = squareSide;
+Square::Square(string shapeName, double squareBase) : Shape(shapeName) {
+	this->name = shapeName;
+	this->base = squareBase;
 }
 
 double Square::calculatePerimeter() const
 {
-	return SIDES_OF_SQUARE * base ;
+	return squareSides * base;
 }
 
 double Square::calculateArea() const
@@ -17,7 +17,7 @@ double Square::calculateArea() const
 
 void Square::printDetails()
 {
-	cout << "I'm a square!" << endl
-		<< "my perimiter is : " << calculatePerimeter() << endl
-		<< "and my area is: " << calculateArea();
+	cout << "My info as a "<<name<<", are: \n";
+	cout << "Perimeter: " << calculatePerimeter();
+	cout << "\nArea: " << calculateArea() << endl<<endl;
 }

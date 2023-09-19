@@ -1,25 +1,28 @@
 #include "RegularPolygon.h"
 
-RegularPolygon::RegularPolygon(int sidesOfPolygon, double polygonSideLegnth, double polygonApotem)
+
+RegularPolygon::RegularPolygon(string shapeName, double lenghtOfSide, double apotemLength, int regularPolSides) 
+	: Shape(shapeName)
 {
-	numberOfSides = sidesOfPolygon;
-	side = polygonSideLegnth;
-	apotem = polygonApotem;
+	this->name = shapeName;
+	this->side = lenghtOfSide;
+	this->apotem = apotemLength;
+	this->numberOfSide = regularPolSides;
 }
 
 double RegularPolygon::calculatePerimeter() const
 {
-	return numberOfSides * side;
+	return side * numberOfSide;
 }
 
 double RegularPolygon::calculateArea() const
 {
-	return (((calculatePerimeter())*apotem)/2);
+	return ((calculatePerimeter() * apotem)/2);
 }
 
 void RegularPolygon::printDetails()
 {
-	cout << "I'm a RegularPol!" << endl
-		<< "my perimiter is : " << calculatePerimeter() << endl
-		<< "and my area is: " << calculateArea();
+	cout << "My info as a " << name << ", are: \n";
+	cout << "Perimeter: " << calculatePerimeter();
+	cout << "\nArea: " << calculateArea() << endl << endl;
 }
